@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design.css">
+    <script src="https://kit.fontawesome.com/e9955cfc96.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Joy's Blog</title>
+</head>
+<script>
+    //TOP
+    $(function() {
+        $('#BackTop').click(function() {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 333);
+        });
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('#BackTop').fadeIn(222);
+            } else {
+                $('#BackTop').stop().fadeOut(222);
+            }
+        }).scroll();
+    });
+    //手機板導覽列隱藏
+    $(document).ready(function() {
+        $("#aa").click(function() {
+            $("[name=Checkbox]:checkbox").prop("checked", false);
+
+        });
+    });
+    $(document).ready(function() {
+        $("#ab").click(function() {
+            $("[name=Checkbox]:checkbox").prop("checked", false);
+
+        });
+    });
+    $(document).ready(function() {
+        $("#ac").click(function() {
+            $("[name=Checkbox]:checkbox").prop("checked", false);
+
+        });
+    });
+    $(document).ready(function() {
+        $("#ad").click(function() {
+            $("[name=Checkbox]:checkbox").prop("checked", false);
+
+        });
+    });
+    $(document).ready(function() {
+        $("#ae").click(function() {
+            $("[name=Checkbox]:checkbox").prop("checked", false);
+
+        });
+    });
+    $(document).ready(function() {
+        $("#af").click(function() {
+            $("[name=Checkbox]:checkbox").prop("checked", false);
+
+        });
+    });
+    $(document).ready(function() {
+        $("#ag").click(function() {
+            $("[name=Checkbox]:checkbox").prop("checked", false);
+
+        });
+    });
+</script>
+
+<body>
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <input type="checkbox" id="menu_control" name="Checkbox">
+    <!--label可控制是否打勾-->
+    <div class="header" id="nav-container">
+        <h1 class="logo">
+            <a href=""><img src="img/mark.jpg" alt=""></a>
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <!--手機選單 for是屬性-->
+            <span>選單</span>
+        </label>
+        <nav>
+            <a id="aa" href="#aboutme">About Me</a>
+            <a id="ab" href="#myskill">My Skills</a>
+            <a id="ac" href="#work">My Works</a>
+            <a id="ad" href="#school">School Experiences</a>
+            <a id="ae" href="#career">Career Experiences</a>
+<!--            <a id="af" href="#">Others</a>-->
+            <a id="ag" href="#contact">Contact</a>
+        </nav>
+    </div>
+    <!--滿版區塊-->
+    <div class="banner">
+        <div class="head_text">
+            <h1>Joy's Blog</h1>
+            <h2>407040160 圖資三 黃詩佳</h2>
+            <hr />
+            <h2>About Joy's Introduce.</h2>
+            <p>愛貓人士◆陸劇韓劇愛好者◆小說</p>
+        </div>
+        <img src="img/head.jpg" alt="">
+    </div>
+    <div class="service">
+        <div class="wrap">
+            <div class="title" id="aboutme">
+                <h2 id="aboutme">About Me</h2>
+                <p><span>日日復月月，月月復年年，年年復此生。</span>
+                </p>
+            </div>
+            <div class="item_group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="img/id.JPG" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="aboutme_text">
+                            <h2 style="text-align: left; color: blueviolet;">黃詩佳</h2>
+                            <h3 style="text-align: left;">學號:407040160</h3>
+                            <h3 style="text-align: left;">系級:圖資三</h3>
+                            <h3 style="text-align: left;">興趣:</h3>
+                            <h4>
+                                <ul style="padding-left:50px;" type="disc">
+                                    <li>喜歡欣賞戲劇和閱讀小說來放鬆。</li>
+                                    <li>喜歡與人交際和小動物互動。</li>
+                                    <li>嘗試新事物，比如偶爾跳個舞、唱歌、摸索樂器。</li>
+                                    <li>四處蒐羅美食。</li>
+                                    <li>看財經節目，研究金融股票、理財工具(e.g.信用卡)。</li>
+                                    <li>喜歡看硬體設備相關影片，有自己換過主機CPU與加裝RAM過的經驗。</li>
+                                </ul>
+                            </h4>
+                        </div>
+
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="wrap">
+            <!--做固定寬-->
+            <div class="title" id="myskill">
+                <h2>My Skills</h2>
+                <p><span>業精於勤，荒於嬉;行成於思，毀於隨。</span>
+                </p>
+            </div>
+            <div class="item_group">
+                <!---二欄畫面-->
+                <div class="item-person">
+                    <div class="item">
+                        <div class="pic">
+                            <img src="img/computer.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="skilltext">
+                                <h3>電腦能力</h3>
+                                <br>
+                                <p><span><b>程式軟體:</b>
+                                        <ul style="padding-left:50px;">
+                                            <li>Python(基礎)</li>
+                                            <li>C++(基礎)</li>
+                                            <li>威力導演(略懂)</li>
+                                            <li>安裝Linux(虛擬機安裝經驗)與windows(重灌經驗)。</li>
+                                        </ul><br>
+                                        <b>文書處理:</b>
+                                        <ul style="padding-left:50px;" type="disc">
+                                            <li>Word:中打80 WPM、英打50 WPM。</li>
+                                            <li>Powerpoint:美編與動態設計。</li>
+                                            <li>Excel:修習過相關課程，熟悉基礎操作與部分函數。</li>
+                                            <li>Access:課堂有使用過並設計一個小型資料庫。</li>
+                                            <li>影片剪輯: 威力導演:簡單使用電腦剪輯的功能。</li>
+                                            <li>圖片編輯: Photoshop:使用手機app進行簡單照片合成與修改</li>
+                                        </ul>
+                                    </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-person">
+                    <div class="item">
+                        <div class="pic">
+                            <img src="img/lau.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="skilltext">
+                                <h3>語言能力</h3>
+                                <br>
+                                <p><span>
+                                        <ul style="padding-left:50px;">
+                                            <li>中文:精通</li>
+                                            <li>閩南語:聽-精通、說-中等</li>
+                                            <li>英文:中等</li>
+                                            <li>日文:略懂</li>
+                                            <li>韓文:略懂</li>
+                                            <li>西班牙文:基礎 </li>
+                                        </ul>
+                                    </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="item">
+                    <div class="pic">
+                        <img src="img/cat.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit provident fuga nihil blanditiis voluptates consectetur placeat ipsa rem totam enim rerum, a hic eius quas ex minus quisquam earum repellendus.</span>
+                            <span>Suscipit fuga assumenda, et facere, consequuntur aliquid quos ipsam obcaecati autem esse, quod quas nesciunt a illum expedita veritatis error doloribus. Sit reprehenderit dolor omnis quaerat consequuntur illum quo? Rerum.</span>
+                        </p>
+                    </div>
+                </div>
+-->
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="wrap">
+            <div class="title" id="work">
+                <h2>My Works</h2>
+                <p><span>故書不厭百回讀，熟讀深思子自知。</span><br>
+                    <span>點擊圖片可前往觀看作品!</span>
+                </p>
+            </div>
+            <div class="item_group">
+                <div class="item">
+                    <div class="text">
+                        <h3>大一媒體概論設計之圖書館介紹短片</h3>
+                        <p><span>親自至西盛圖書館拍攝所做成的介紹短片。</span><br><br>
+                            <!--                        <button type="button">前往<br>觀看</button>-->
+                        </p>
+                    </div>
+                    <div class="pic">
+                        <a href="https://youtu.be/5UkNK1_Rd4E"><img src="img/work2.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item_group">
+                <div class="item">
+                    <div class="pic">
+                        <a href="https://drive.google.com/file/d/1ZYbU7E8wTgNkfuw-NeAlLgHcPKMwj4N0/view?usp=sharing"><img src="img/work5.jpg" alt=""></a>
+                    </div>
+                    <div class="text">
+                        <h3>大二數位典藏之電子書介紹</h3>
+                        <p><span>親自至西盛圖書館拍攝所做成的介紹短片。</span><br><br>
+                            <!--                        <button type="button">前往<br>觀看</button>-->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item_group">
+                <div class="item">
+                    <div class="text">
+                        <h3>大三人工智慧之論文報告</h3>
+                        <p><span>與隊友合作研究兩篇人工智慧相關論文，並進行解析。</span><br><br>
+                        </p>
+                    </div>
+                    <div class="pic">
+                        <a href="https://drive.google.com/file/d/1HNO8-Lh_PfoA5FVs5z1SwwD1UJ_mUDPK/view?usp=sharing"><img src="img/work4.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item_group">
+                <div class="item">
+                    <div class="pic">
+                        <a href="https://drive.google.com/file/d/1zpNPb-sr4Rl0HDo9V54cXABhjYKWO-Px/view?usp=sharing"><img src="img/work3.jpg" alt=""></a>
+                    </div>
+                    <div class="text">
+                        <h3>大三大數據之房地產分析小專題</h3>
+                        <p><span>與隊友蒐集22萬筆近幾年來的新北市各區房屋資料進行分析。</span><br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item_group">
+                <div class="item">
+                    <div class="text">
+                        <h3>大三大IOT小專題</h3>
+                        <p><span>結合物聯網所設計的網站以及小遊戲。(須配合webdunio才可使用)</span><br><br>
+                        </p>
+                    </div>
+                    <div class="pic">
+                        <a href="http://140.136.208.34/iot09a/06%20mid/16%20407040160+407040457/%e6%9c%9f%e4%b8%ad%e5%b0%88%e9%a1%8c%e6%98%af%e9%80%99%e5%80%8b%e5%96%94.html"><img src="img/work1.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="item_group">
+                <div class="item">
+                    <div class="text">
+                        <h3 style="color: cadetblue;">大二進階python之爬蟲與詞彙計算<br>(文字雲、列表、長條圖)</h3>
+                        <p><span>Dcard、yahoo、UDN、中時日報這四家網站，進行爬蟲以及使用結巴做詞彙計算，並且可以用文字雲、列表以及長條圖呈現。</span><br><br>
+                            <a href="file/407040160%E5%9C%96%E8%B3%87%E4%BA%8C_%E9%BB%83%E8%A9%A9%E4%BD%B3_%E7%88%AC%E8%9F%B2.rar" download="爬蟲與詞彙.rar">點選下載</a>
+                        </p>
+                    </div>
+                    <div class="text">
+                        <h3 style="color: cadetblue;">大三AI爬蟲-wikiart</h3>
+                        <p><span>爬取畢卡索1167張作品照片。</span><br><br>
+                            <a href="file/%E5%B0%88%E9%A1%8C%E4%BA%8C.rar" download="專題二.rar">點選下載</a>
+                        </p>
+                    </div>
+                    <div class="text">
+                        <h3 style="color: cadetblue;">大三AI爬蟲-google照片</h3>
+                        <p><span>使用selenium以及讀取存檔兩種方法，利用google照片搜尋"快樂"後將其爬取下來。</span><br><br>
+                            <a href="file/%E5%B0%88%E9%A1%8C03.rar" download="專題三.rar">點選下載</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item_group">
+            
+                <div class="item">
+                    <div class="text">
+                        <h3 style="color: cadetblue;">大三AI-股價新聞與評論之情緒分析(製作中)</h3>
+                        <p><span>使用selenium或其他爬蟲技巧，將網路上有關鴻海以及陽明這兩檔股票相關新聞、評論爬取下來，並進行情緒分析，分析言論與股價之關係。</span><br>
+                        </p>
+                    </div>
+                    <div class="text">
+                        <h3 style="color: cadetblue;">大三AI-圖像辨識或自然語言(製作中)</h3>
+                        <p><span>預計做出有關圖像辨識或是自然語言的人工智慧作品。</span><br><br>
+                        </p>
+                    </div>
+                    <div class="text">
+                        <h3 style="color: cadetblue;">大三專利分析(製作中)</h3>
+                        <p><span>將針對google和apple這兩家公司進行有關語音助理技術之專利分析，並且對這兩家之車用語音進行趨勢預測。</span><br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about">
+        <div class="wrap">
+            <!--做固定寬-->
+            <div class="title" id="school">
+                <h2>School Experiences</h2>
+                <p><span>讀萬卷書，行萬卷里。</span>
+                </p>
+            </div>
+            <div class="item_group">
+                <!---3欄畫面-->
+                <div class="item-career">
+                    <div class="item">
+                        <!--
+                        <div class="pic">
+                            <img src="img/cat.jpg" alt="">
+                        </div>
+-->
+                        <div class="text">
+                            <h3>大一</h3>
+                            <p>
+                            <ul style="padding-left:50px;">
+                                <li>計算機概論</li>
+                                <li>參考資源</li>
+                                <li>資訊組織</li>
+                                <li>媒體概論</li>
+                                <li>圖書資訊學導論 </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-career">
+                    <div class="item">
+                        <!--
+                    <div class="pic">
+                        <img src="img/cat.jpg" alt="">
+                    </div>
+-->
+                        <div class="text">
+                            <h3>大二</h3>
+                            <p>
+                            <ul style="padding-left:50px;">
+                                <li>統計學</li>
+                                <li>資料庫系統概論</li>
+                                <li>主題分析</li>
+                                <li>館藏發展</li>
+                                <li>計算機網路 </li>
+                                <li>資料結構</li>
+                                <li>書目計量學導論</li>
+                                <li>Linux桌面系統</li>
+                                <li>Koha圖書館管理系統</li>
+                                <li>數位出版與數位閱讀</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-career">
+                    <div class="item">
+                        <!--
+                    <div class="pic">
+                        <img src="img/cat.jpg" alt="">
+                    </div>
+-->
+                        <div class="text">
+                            <h3>大三</h3>
+                            <p>
+                            <ul style="padding-left:50px;">
+                                <li>讀者服務</li>
+                                <li>作業系統</li>
+                                <li>物聯網技術與應用</li>
+                                <li>大數據資料分析與應用</li>
+                                <li>專利資訊(修讀中) </li>
+                                <li>網頁設計(修讀中)</li>
+                                <li>人工智慧(修讀中)</li>
+                                <li>人工智慧系統開發(修讀中) </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="item_group">
+                <!---3欄畫面-->
+                <div class="item-career2">
+                    <div class="item">
+                        <!--
+                        <div class="pic">
+                            <img src="img/cat.jpg" alt="">
+                        </div>
+-->
+                        <div class="text">
+                            <h3>系外選修</h3>
+                            <p>
+                            <ul style="padding-left:50px;">
+                                <li>Python程式設計進階</li>
+                                <li>Excel 試算表的統計應用</li>
+                                <li>普通化學</li>
+                                <li>中國后妃政治</li>
+                                <li>中國小說與文化 </li>
+                                <li>東西文化的整合-以吳經熊為例</li>
+                                <li>腦科學與生活 </li>
+                                <li>基礎日文</li>
+                                <li>進階日文(修讀中)</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-career2">
+                    <div class="item">
+                        <!--
+                    <div class="pic">
+                        <img src="img/cat.jpg" alt="">
+                    </div>
+-->
+                        <div class="text">
+                            <h3>雙主修/輔系</h3>
+                            <p>
+                            <ul style="padding-left:50px;">
+                                <li>大一西文會話</li>
+                                <li>大一西文聽力</li>
+                                <li>商業自動化</li>
+                                <li>網路行銷</li>
+                                <li>大一西文文法(修讀中) </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title" id="career">
+                <h2>Career Experiences</h2>
+                <p><span>紙上得來終覺淺，絕知此事要躬行。</span>
+                </p>
+            </div>
+            <div class="item_group">
+                <!---3欄畫面-->
+                <div class="item-career">
+                    <div class="item">
+                        <div class="pic">
+                            <img src="img/career1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>明新診所</h3>
+                            <p>
+                            <ul style="padding-left:50px;">
+                                <li>職稱:診所助理</li>
+                                <li>起迄時間:2018.8.10~至今</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-career">
+                    <div class="item">
+                        <div class="pic">
+                            <img src="img/career2.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>資訊中心(服務學習)</h3>
+                            <p>
+                            <ul style="padding-left:50px;">
+                                <li>內容:管理電腦教室與整理</li>
+                                <li>起迄時間:2019.3~2019.5</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-career">
+                    <div class="item">
+                        <div class="pic">
+                            <img src="img/career3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>輔大圖書館(服務學習)</h3>
+                            <p>
+                            <ul style="padding-left:50px;">
+                                <li>內容:整理與維護期刊</li>
+                                <li>起迄時間:2019.10~2019.12</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+        <div class="service" style="background-color: #FFF3EE;">
+        <div class="wrap">
+            <div class="footitem_group" id="contact">
+                <div class="footitem">
+                    <div class="text" >
+                        <h3 style="color:	#FF00FF;font-size: 40px;">Contact</h3>
+                        <h3 style="color: dodgerblue;font-size: 25px;">Contact Information</h3>
+                        <p><ul >
+                            <li>電子信箱:</li>
+                            <li>手機:0922716498</li>
+                            <li>住址:242新北市新莊區中正路510號</li>
+                        </ul>
+                        <h3 style="color: dodgerblue;font-size: 25px;">Reference</h3>
+                        <p><ul >
+                            <li>金魚都能懂的網頁切版</li>
+                        </ul>
+                        </p>
+                    </div>
+<!--
+                    <div class="pic" >
+                       <img src="img/work2.jpg" alt="">
+                    </div>
+-->
+                </div>
+            </div></div></div>
+    <div class="footer">
+        &copy;2021 The site made by Joy.
+    </div>
+    <script src="design.js"></script>
+</body></html>
