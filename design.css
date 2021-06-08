@@ -134,7 +134,7 @@ nav {
 
 /*點擊三條隱藏標題*/
 #menu_control:checked ~ .banner .head_text {
-    opacity: 0;
+    margin-left: 100%;
 }
 
 nav a {
